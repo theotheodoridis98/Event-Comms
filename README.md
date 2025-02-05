@@ -38,21 +38,30 @@ For more details, see the Salesforce DX Developer Guide.
 
 ### **📂 Component Details**
 
-1️⃣ Numerator
+### 1️⃣ Numerator
+
 Displays the current and previous count.
 Listens for count updates from other components.
-2️⃣ RemoteControl
+
+### 2️⃣ RemoteControl
+
 Provides buttons to modify the counter:
 ➕ Add
 ➖ Subtract
 ✖ Multiply (2-6)
 Dispatches custom events to update the numerator.
-3️⃣ Augmentor
+
+### 3️⃣ Augmentor
+
 Allows setting a starting counter value via an input field.
-4️⃣ Controls
+
+### 4️⃣ Controls
+
 Provides action buttons (➕ ➖ ✖) to modify the count.
 Sends events to update the Numerator.
-5️⃣ Counts
+
+### 5️⃣ Counts
+
 Displays the count state dynamically.
 Listens for events to update automatically.
 
@@ -66,6 +75,6 @@ Listens for events to update automatically.
 
 📡 Decoupled architecture using @api, @track, and event dispatching.
 
-
+### PREVIEW
 ![Preview of the application](images/preview.png)
 
