@@ -24,11 +24,10 @@ These components communicate using **Lightning events**, showcasing how child co
 
 ### **2️⃣ Clone the Repository**
 
-```sh
 git clone [https://github.com/theotheodoridis98/Event-Comms-LWC.git](https://github.com/theotheodoridis98/Event-Comms-LWC.git)
 cd Event-Comms-LWC
-3️⃣ Deploy to Salesforce
-Bash
+
+### **3️⃣ Deploy to Salesforce**
 
 sf org login web -d -a my-devhub
 sf org create scratch -f config/project-scratch-def.json -a my-scratch-org -d 30
@@ -37,7 +36,7 @@ sf org assign permset --name EventCommsPermissionSet
 sf org open
 For more details, see the Salesforce DX Developer Guide.
 
-📂 Component Details
+### **📂 Component Details**
 
 1️⃣ Numerator
 Displays the current and previous count.
