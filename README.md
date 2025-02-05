@@ -1,18 +1,74 @@
-# Salesforce DX Project: Next Steps
+# 🚀 **Event Comms** - **Lightning Web Components (LWC)**
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This project is a **Lightning Web Components (LWC)** application that demonstrates event communication in Salesforce. It consists of multiple components that interact using **custom events** to dynamically update and manage a counter.
 
-## How Do You Plan to Deploy Your Changes?
+## 📌 **Overview**
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+The application consists of the following components:
 
-## Configure Your Salesforce DX Project
+- **Numerator**: Displays the current and previous count.
+- **RemoteControl**: Provides buttons to modify the counter (add, subtract, multiply).
+- **Augmentor**: Allows setting a starting value for the counter.
+- **Controls**: Centralized panel with action buttons.
+- **Counts**: Displays the count state dynamically.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+These components communicate using **Lightning events**, showcasing how child components update parent components.
 
-## Read All About It
+## 🛠️ **Installation & Setup**
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+### **1️⃣ Prerequisites**
+
+- A **Salesforce Developer Org** or a **Scratch Org**.
+- **Salesforce CLI** installed.
+- A connected **SFDX project**.
+
+### **2️⃣ Clone the Repository**
+
+```sh
+git clone [https://github.com/theotheodoridis98/Event-Comms-LWC.git](https://github.com/theotheodoridis98/Event-Comms-LWC.git)
+cd Event-Comms-LWC
+3️⃣ Deploy to Salesforce
+Bash
+
+sf org login web -d -a my-devhub
+sf org create scratch -f config/project-scratch-def.json -a my-scratch-org -d 30
+sf project deploy start
+sf org assign permset --name EventCommsPermissionSet
+sf org open
+For more details, see the Salesforce DX Developer Guide.
+
+📂 Component Details
+1️⃣ Numerator
+Displays the current and previous count.
+Listens for count updates from other components.
+2️⃣ RemoteControl
+Provides buttons to modify the counter:
+➕ Add
+➖ Subtract
+✖ Multiply (2-6)
+Dispatches custom events to update the numerator.
+3️⃣ Augmentor
+Allows setting a starting counter value via an input field.
+4️⃣ Controls
+Provides action buttons (➕ ➖ ✖) to modify the count.
+Sends events to update the Numerator.
+5️⃣ Counts
+Displays the count state dynamically.
+Listens for events to update automatically.
+🚀 Features & Functionality
+🔄 Real-time event-driven updates.
+⚡ Efficient Lightning Data Binding.
+🎨 Custom UI styling.
+📡 Decoupled architecture using @api, @track, and event dispatching.
+📜 License
+This project is licensed under the MIT License.
+
+🤝 Contributing
+Fork the repository.
+Create a new branch (feature/new-feature).
+Commit your changes.
+Push to your fork and submit a PR.
+📩 Contact
+For issues, open an issue on GitHub or contact me at your.email@example.com.
+
+Happy Coding! 🚀
