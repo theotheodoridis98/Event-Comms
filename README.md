@@ -38,6 +38,7 @@ sf org open
 For more details, see the Salesforce DX Developer Guide.
 
 📂 Component Details
+
 1️⃣ Numerator
 Displays the current and previous count.
 Listens for count updates from other components.
@@ -55,20 +56,17 @@ Sends events to update the Numerator.
 5️⃣ Counts
 Displays the count state dynamically.
 Listens for events to update automatically.
+
 🚀 Features & Functionality
+
 🔄 Real-time event-driven updates.
+
 ⚡ Efficient Lightning Data Binding.
+
 🎨 Custom UI styling.
+
 📡 Decoupled architecture using @api, @track, and event dispatching.
-📜 License
-This project is licensed under the MIT License.
 
-🤝 Contributing
-Fork the repository.
-Create a new branch (feature/new-feature).
-Commit your changes.
-Push to your fork and submit a PR.
-📩 Contact
-For issues, open an issue on GitHub or contact me at your.email@example.com.
 
-Happy Coding! 🚀
+![image](https://github.com/user-attachments/assets/03a3bdfd-759e-43a0-9c12-43cf2afa59f0)
+
