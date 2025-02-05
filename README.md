@@ -68,5 +68,5 @@ Listens for events to update automatically.
 📡 Decoupled architecture using @api, @track, and event dispatching.
 
 
-![Preview](images/preview.png)
+![Preview of the application](images/preview.png)
 
